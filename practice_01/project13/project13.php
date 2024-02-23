@@ -26,7 +26,10 @@
             background-color: black;
             color: white;
         } 
-
+        .course img {
+            height: 250px;
+            width: 100%;
+        }
         .course:hover {
             background-color:darkkhaki;
            color: black;
@@ -39,6 +42,7 @@
     <?php
         $courses = [
             [
+                'img' => '<img src="img/img1.jpg">',
                 'title' => 'Học viện quốc tế',
                 'description' => 'Chương trình đào tạo chính thức tại Việt Nam từ 
                     Aptech Global. Phát triển nghề nghiệp sinh viên IT như một lập trình viên 
@@ -48,6 +52,7 @@
                 'duration' => '2 - 2.5 năm' 
             ],
             [
+                'img' => '<img src="img/img2.png">',
                 'title' => 'Lập trình web fullstack',
                 'description' => 'Khóa học phù hợp với người bắt đầu lập trình hoặc người chuyển nghề. Trang bị từ 
                 font-end đến back-end, xây dựng website hoàn chỉnh sau khóa học.',
@@ -56,6 +61,7 @@
                 'duration' => '6 tháng'
             ],
             [
+                'img' => '<img src="img/img3.png">',
                 'title' => 'Lập trình java fullstack',
                 'description' => 'Phát triển ứng dụng web từ cơ bản đến nâng cao bằng Java, các ứng dụng doanh nghiệp sử dụng J2EE, Serlet, JSP, Spring Framework, EJB, ...',
                 'fee' => 'giảm 15% học phí',
@@ -63,6 +69,7 @@
                 'duration' => '236 giờ'
             ],
             [
+                'img' => '<img src="img/img4.webp">',
                 'title' => 'Học viện quốc tế',
                 'description' => 'Chương trình đào tạo chính thức tại Việt Nam từ 
                     Aptech Global. Phát triển nghề nghiệp sinh viên IT như một lập trình viên 
@@ -72,6 +79,7 @@
                 'duration' => '2 - 2.5 năm' 
             ],
             [
+                'img' => '<img src="img/img5.png">',
                 'title' => 'Lập trình web fullstack',
                 'description' => 'Khóa học phù hợp với người bắt đầu lập trình hoặc người chuyển nghề. Trang bị từ 
                 font-end đến back-end, xây dựng website hoàn chỉnh sau khóa học.',
@@ -80,6 +88,7 @@
                 'duration' => '6 tháng'
             ],
             [
+                'img' => '<img src="img/img6.jpg">',
                 'title' => 'Lập trình java fullstack',
                 'description' => 'Phát triển ứng dụng web từ cơ bản đến nâng cao bằng Java, các ứng dụng doanh nghiệp sử dụng J2EE, Serlet, JSP, Spring Framework, EJB, ...',
                 'fee' => 'giảm 15% học phí',
@@ -88,19 +97,18 @@
             ]
         ];
 
-        //
+        
         echo '<div class="nav">';
-        foreach($courses as $course) {
-
+        for ($i = 0; $i < count($courses); $i++) {
             echo '<div class="course">';
-            echo '<h2>' . $course['title'] . '</h2>'; 
-            echo '<p>' . $course['description'] . '</p>'; 
-            echo '<p>Học phí: ' . $course['fee'] . '</p>'; 
-            echo '<p>Khải giảng: ' . $course['start_date'] . '</p>'; 
-            echo '<p>Thời lượng: ' . $course['duration'] . '</p>'; 
+            echo $courses[$i]['img'];
+            echo '<h2>' . $courses[$i]['title'] . '</h2>'; 
+            echo '<p>' . $courses[$i]['description'] . '</p>'; 
+            echo '<p>Học phí: ' . $courses[$i]['fee'] . '</p>'; 
+            echo '<p>Khải giảng: ' . $courses[$i]['start_date'] . '</p>'; 
+            echo '<p>Thời lượng: ' . $courses[$i]['duration'] . '</p>'; 
             echo '</div>';
-
-        }
+            }
         echo '</div>';
     ?>
 </body>
