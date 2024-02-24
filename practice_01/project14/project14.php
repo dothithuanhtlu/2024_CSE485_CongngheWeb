@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bai4.css">
-    <script src="/ckeditor.js"></script>
+    <script type="text/javascript" src="./ckeditor/ckeditor.js"></script>
     <title>bai 4</title>
 </head>
 
@@ -201,7 +200,7 @@
 
 
                 <label for="">Notes</label><br>
-                <textarea name="" id="ckeditor" cols="30" rows="10"></textarea><br>
+                <textarea name="ckeditor" id="ckeditor" cols="30" rows="10"></textarea><br>
                 <script>
                 CKEDITOR.replace('ckeditor');
                 </script>
@@ -221,9 +220,11 @@
                 <label class="empty" for="">Click to change</label><br>
                 <input class="empty" style="margin-bottom:10px;" type="text" name="" id=""><br>
 
+                <div style="margin-left: 260px; margin-top: 10px;">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Cancel</button>
+                </div>
 
-                <button type="submit">Submit</button>
-                <button type="reset">Cancel</button>
 
             </form>
         </div>
