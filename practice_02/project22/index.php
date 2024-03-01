@@ -60,14 +60,14 @@ $user = [
         }
 
         //handle errors or update profile
-        if(empty($error)) {
+        if(empty($errors)) {
             //Update user profile in database or persistent storage(replace with your logic)
             echo "Profile updated successfully!";
         }
         else {
             echo "Errors: ";
             foreach($errors as $error) {
-                echo "<br> - $error";
+                echo "<br> $error";
             }
         }
 
