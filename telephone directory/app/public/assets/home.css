@@ -31,13 +31,11 @@
 }
 /* nav aside */
 .navColum {
-  height: 700px;
+  height: auto;
   max-width: 400px;
   background-color: #bfc2da;
 }
-/* .dropdown1 {
-  padding-bottom: 70px;
-} */
+
 /* content - hotnew*/
 .navColum,
 .article {
@@ -70,8 +68,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  display: none;
 }
+
 .Manager,
 .Marketing,
 .HR,
