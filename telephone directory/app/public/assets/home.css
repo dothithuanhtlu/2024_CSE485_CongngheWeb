@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background-color: #969cc9;
+}
+
+.nav-link {
+  color: black;
+  margin-right: 30px;
+}
+
+.searchBox {
+  width: 300px;
+}
+
+.searchButton,
+.signIn-btn,
+.LogIn-btn {
+  background-color: #11207a;
+}
+
+.signIn-btn {
+  margin-right: 5px;
+}
+
+::placeholder {
+  color: #999999;
+  font-style: italic;
+}
+/* nav aside */
+.navColum {
+  height: 700px;
+  max-width: 400px;
+  background-color: #bfc2da;
+}
+/* .dropdown1 {
+  padding-bottom: 70px;
+} */
+/* content - hotnew*/
+.navColum,
+.article {
+  float: left;
+}
+.hotNew1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.hotNew {
+  width: 350px;
+  height: 300px;
+  margin-bottom: 30px;
+}
+.imgHotNew img {
+  width: 350px;
+  height: 200px;
+}
+.time {
+  color: gray;
+}
+/* content - profile */
+.profileEmployee {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  display: none;
+}
+.Manager,
+.Marketing,
+.HR,
+.IT,
+.Financial,
+.Operations,
+.Research,
+.Customer,
+.QA,
+.Ad {
+  width: 300px;
+  height: 410px;
+}
+.card-img-top {
+  width: 300px;
+  height: 200px;
+  margin-top: 4px;
+}
+/* dropdown menu */
+.dropdown-menu {
+  background-color: #bfc2da;
+}
+/* footer top */
+.footerTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a2ba6;
+}
+.copyright {
+  color: white;
+  font-size: 20px;
+  margin-right: 200px;
+  margin-top: 10px;
+}
+.contact {
+  margin-top: 10px;
+}
+.contact li {
+  list-style-type: none;
+  display: inline-block;
+}
+.contact li a {
+  color: white;
+}
+/* Footer bottom*/
+.footerBottom {
+  background-color: #11207a;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description {
+  color: white;
+  margin-left: 200px;
+}
