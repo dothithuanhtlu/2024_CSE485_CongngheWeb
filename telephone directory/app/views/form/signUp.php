@@ -1,3 +1,10 @@
+<?php
+require_once '../../services/DepartmentService.php';
+require_once '../../models/Department.php';
+require_once '../../config/Connection.php';
+$getAllDepartment = new DepartmentService();
+$getAllDepartment1 = $getAllDepartment->getAllNamesDepartment();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,13 +44,16 @@
                 <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter mobile-phone">
             </div>
             <div class="mb-3">
+
                 <label for="department">Department:</label>
                 <select name="department" id="department">
-                    <option value="department">
-                        Marketing
-                    </option>
-                    <option value="department">HR</option>
-                    <option value="department">IT</option>
+                    <?php foreach ($getAllDepartment1 as $abc) : ?>
+                        <option value="">
+                            <?php echo $abc->getName() ?>
+                        </option>
+                    <?php endforeach; ?>
+
+
                 </select>
             </div>
             <div class="mb-3 ">

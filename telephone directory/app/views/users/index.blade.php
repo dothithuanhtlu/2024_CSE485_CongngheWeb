@@ -65,7 +65,7 @@
                     <button class="btn btn-dark searchButton" type="submit">Search</button>
                 </form>
                 <!-- SIGUP LOGIN -->
-                <b>Hello </b>
+                <b>Hello user </b>
             </div>
 
         </nav>
